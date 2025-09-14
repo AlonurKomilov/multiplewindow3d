@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Three.js Test</title>
+</head>
+<body>
+    <script src="https://unpkg.com/three@0.160.0/build/three.min.js"></script>
+    <script>
+        console.log('Three.js loaded:', typeof THREE !== 'undefined');
+        if (typeof THREE !== 'undefined') {
+            console.log('Three.js version:', THREE.REVISION);
+            console.log('Available:', {
+                Scene: typeof THREE.Scene,
+                WebGLRenderer: typeof THREE.WebGLRenderer,
+                SphereGeometry: typeof THREE.SphereGeometry,
+                MeshStandardMaterial: typeof THREE.MeshStandardMaterial,
+                PointsMaterial: typeof THREE.PointsMaterial
+            });
+        }
+    </script>
+    <h1>Check browser console for Three.js test results</h1>
+</body>
+</html>
